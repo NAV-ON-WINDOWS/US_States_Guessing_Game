@@ -25,7 +25,7 @@ while len(guessed_states) < 50:
         missing_states = []
         for state in all_states:
             if state not in guessed_states:
-                missing_statesOhio.append(state)
+                missing_states.append(state)
         print(missing_states)
         break
 
@@ -37,4 +37,3 @@ while len(guessed_states) < 50:
         state_data = data[data.state == answer]
         tpen.goto(state_data["x"].item(), state_data["y"].item())
         tpen.write(answer)
-
